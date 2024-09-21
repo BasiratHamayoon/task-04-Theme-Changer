@@ -1,14 +1,112 @@
 body{
+   background-color: #000000;
+   transition: background-color 0.5s ease-in-out;
+}
+.wrapper div{
+   position: fixed;
+   bottom: -150px;
+   height: 50px;
+   width: 50px;
+   z-index: -1;
+   box-shadow: 0 0 50px #4fff3c ,
+               0 0 50px #4fff3c,
+               0 0 50px #4fff3c,
+               0 0 50px #4fff3c;
+   animation: animate 8s linear infinite;
+   background: radial-gradient(#0c0c0d, #00041a)
+}
+.wrapper div:nth-child(1){
+   left: 60px;
+   animation-delay: 9s;
+   width: 30px;
+   height: 30px;
+}
+.wrapper div:nth-child(2){
+   left: 70%;
+   animation-delay: 3s;
+   width: 30px;
+   height: 30px;
+}
+.wrapper div:nth-child(3){
+   left: 25%;
+   animation-delay: 12s;
+   width: 10px;
+   height: 10px;
+}
+.wrapper div:nth-child(4){
+   left: 30%;
+   animation-delay: 5s;
+   width: 45px;
+   height: 45px;
+}
+.wrapper div:nth-child(5){
+   left: 80%;
+   animation-delay: 7s;
+   width: 40px;
+   height: 40px;
+}
+.wrapper div:nth-child(6){
+   left: 60%;
+   animation-delay: 4s;
+   width: 20px;
+   height: 20px;
+}
+.wrapper div:nth-child(7){
+   left: 95%;
+   animation-delay: 9s;
+   width: 35px;
+   height: 35px;
+}
+.wrapper div:nth-child(8){
+   left: 50%;
+   animation-delay: 1.5s;
+   width: 50px;
+   height: 50px;
+}
+.wrapper div:nth-child(9){
+   left: 40%;
+   animation-delay: 15s;
+   width: 20px;
+   height: 20px;
+}
+.wrapper div:nth-child(10){
+   left: 15%;
+   animation-delay: 2s;
+   width: 20px;
+   height: 20px;
+}
+.wrapper div:nth-child(11){
+   left: 8%;
+   animation-delay: 13s;
+   width: 60px;
+   height: 60px;
+}
+@keyframes animate{
+   0%{
+       transform: translateY(0);
+       opacity: 1;
+   }
+   80%{
+       opacity: .7;
+   }
+   100%{
+       transform: translateY(-800px) rotate(360deg);
+   }
+}
+
+ img{
+    border-radius: 50%;
+    background-color: rgb(86, 255, 67);
+    padding: 3px;
+    box-shadow: 0px 0px 10px white;
+    margin-left: 47%;
+    margin-top: 20%;
     transition: background-color 0.5s ease-in-out;
 
-}
-button{
-    margin-top: 20%;
-    margin-left: 40%;
-    border: none;
-    font-size: 16px;
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
+ }
+ #text-of-theme{
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 47%;
     transition: background-color 0.5s ease-in-out;
-}
+ }
